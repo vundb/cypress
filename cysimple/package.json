@@ -45,5 +45,8 @@
       "it",
       "afterEach"
     ]
+  },
+  "dependencies": {
+    "cypress": "6.6.0"
   }
 }

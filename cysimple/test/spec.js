@@ -137,21 +137,21 @@ describe('failing test', () => {
   )
 })
 
-// https://github.com/cypress-io/cypress-test-module-api/issues/3
-describe('invalid malformed spec file', () => {
-  beforeEach(() => {
-    chdir.to(fromFolder('invalid'))
-  })
+// // https://github.com/cypress-io/cypress-test-module-api/issues/3
+// describe('invalid malformed spec file', () => {
+//   beforeEach(() => {
+//     chdir.to(fromFolder('invalid'))
+//   })
 
-  afterEach(chdir.back)
+//   afterEach(chdir.back)
 
-  it('returns with error code', () =>
-    // test has reference error on load
-    cypress.run({
-      spec: './cypress/integration/a-spec.js'
-    })
-      .then(normalize)
-      .then(pickImportant)
-      .then(snapshot)
-  )
-})
+//   it('returns with error code', () =>
+//     // test has reference error on load
+//     cypress.run({
+//       spec: './cypress/integration/a-spec.js'
+//     })
+//       .then(normalize)
+//       .then(pickImportant)
+//       .then(snapshot)
+//   )
+// })
